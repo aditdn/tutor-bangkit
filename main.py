@@ -42,6 +42,7 @@ def predict_test():
             'bersenangsenang biar pergi jajah dunia india budaya india nilainilai india lawan bersenangsenang maksud ' \
             'temu orangorang pacar pesta bersenangsenang sekolah sulit pikir milik bebas tempat tekan buat sekolah ' \
             'tua harap senang tulis pergi tulis bantu pikir urut harap bersenangsenang baca untung ta '
+    words = request.args.get("nama")
     input = np.array([words])
 
     test_data = {
