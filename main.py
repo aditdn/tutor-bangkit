@@ -2,6 +2,7 @@ from flask import Flask, request
 import os, json
 
 import numpy as np
+from prediksi import predict as prediction
 
 app = Flask(__name__)
 
