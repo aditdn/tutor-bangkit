@@ -25,7 +25,7 @@ def input_id(id):
 
 @app.route('/input/post/', methods=['POST'])
 def input_post():
-    args1 = request.args.get("kalimat")
+    args1 = request.args.get("kalimat") #diterima di sini
     input_predict = np.array([args1])
 
     response = prediction(input_predict.tolist())
