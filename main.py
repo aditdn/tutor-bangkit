@@ -24,8 +24,11 @@ def input_id(id):
 
 @app.route('/input/post/', methods=['POST'])
 def input_post():
-    args1 = request.args.get("nama")
-    return args1
+    args1 = request.args.get("kalimat")
+    input_predict = np.array([args1])
+
+    response = prediction(input_predict)
+    return response
 
 
 @app.route('/api/predict/test', methods=['GET'])
