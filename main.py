@@ -27,7 +27,7 @@ def input_post():
     args1 = request.args.get("kalimat")
     input_predict = np.array([args1])
 
-    response = prediction(input_predict)
+    response = prediction(input_predict.tolist())
     return response
 
 
