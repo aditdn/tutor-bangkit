@@ -12,7 +12,8 @@ def index():
     umur = {
         "budi": 20,
         "rani": 21,
-        "rara": 23
+        "rara": 23,
+        "ruru": 19
     }
     data["val_umur"] = umur
     return json.dumps(data)
